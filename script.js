@@ -17,7 +17,7 @@ const seasonInfo = {
 };
 
 const danceTitles = [
-  ['Copycat', '跟风'], ['Petals in the Wind', '风中花瓣'], ['Little Waltz', '小圆舞曲'], ['Garden of Dreams', '梦之花园'], ['Awakening', '初醒'], ['Bloom', '绽放'],
+  ['Copycat', ' 跟风'], ['Petals in the Wind', '风中花瓣'], ['Little Waltz', '小圆舞曲'], ['Garden of Dreams', '梦之花园'], ['Awakening', '初醒'], ['Bloom', '绽放'],
   ['Sunlit Steps', '日光之舞'], ['Sea Glass', '海之琉璃'], ['Radiance', '光芒'], ['Midsummer Joy', '盛夏之喜'], ['Azure', '蔚蓝'], ['Golden Hour', '金色时刻'],
   ['Turning Leaves', '叶落旋舞'], ['Harvest Moon', '秋月'], ['Ember', '余烬'], ['Amber Waltz', '琥珀圆舞曲'], ['Passing Seasons', '流转之季'], ['Russet', '赭红'],
   ['Snowfall', '初雪'], ['Stillness', '静'], ['Crystal Waltz', '水晶圆舞曲'], ['Winter Sky', '冬日之空'], ['Quiet Stars', '寂星'], ['Grace in Motion', '动中之恩']
@@ -55,7 +55,7 @@ const choreographerGrid = document.querySelector('#choreographer-grid');
 choreographerGrid.innerHTML = choreographers.map((c, i) => `
   <article class="profile-card">
     <div class="profile-photo watercolor-frame"><span>Portrait ${i+1}<br>照片</span></div>
-    <h3><span class="en">${c.name}</span><span class="zh" lang="zh-Hans">${c.zh}</span></h3>
+    <h3><span class="en">${c.name}</span><span class="zh" lang="zh-Hans"> ${c.zh}</span></h3>
     <p class="role">${c.role}</p>
     <p class="en">Short biography placeholder. Add training, teaching experience and creative interests.</p>
     <p class="zh" lang="zh-Hans">简短个人介绍示意文字，可加入学习背景、教学经验与创作方向。</p>
@@ -66,7 +66,7 @@ const programmeGrid = document.querySelector('#programme-grid');
 programmeGrid.innerHTML = dances.map(d => `
   <article class="dance-card ${d.season}-card" data-season="${d.season}" data-index="${d.number - 1}" data-season-mark="${seasonInfo[d.season].mark}" tabindex="0" role="button" aria-label="Open details for ${d.en}">
     <span class="num">${String(d.number).padStart(2,'0')} · ${seasonInfo[d.season].label}</span>
-    <h3><span class="en">${d.en}</span><span class="zh zh-title" lang="zh-Hans">${d.zh}</span></h3>
+    <h3><span class="en">${d.en}</span><span class="zh zh-title" lang="zh-Hans"> ${d.zh}</span></h3>
     <p class="meta">${d.school}<br>${d.level}</p>
     <span class="card-arrow" aria-hidden="true">›</span>
   </article>
