@@ -17,7 +17,7 @@ const seasonInfo = {
 };
 
 const danceTitles = [
-  ['First Light', '晨光'], ['Petals in the Wind', '风中花瓣'], ['Little Waltz', '小圆舞曲'], ['Garden of Dreams', '梦之花园'], ['Awakening', '初醒'], ['Bloom', '绽放'],
+  ['Copycat', '跟风'], ['Petals in the Wind', '风中花瓣'], ['Little Waltz', '小圆舞曲'], ['Garden of Dreams', '梦之花园'], ['Awakening', '初醒'], ['Bloom', '绽放'],
   ['Sunlit Steps', '日光之舞'], ['Sea Glass', '海之琉璃'], ['Radiance', '光芒'], ['Midsummer Joy', '盛夏之喜'], ['Azure', '蔚蓝'], ['Golden Hour', '金色时刻'],
   ['Turning Leaves', '叶落旋舞'], ['Harvest Moon', '秋月'], ['Ember', '余烬'], ['Amber Waltz', '琥珀圆舞曲'], ['Passing Seasons', '流转之季'], ['Russet', '赭红'],
   ['Snowfall', '初雪'], ['Stillness', '静'], ['Crystal Waltz', '水晶圆舞曲'], ['Winter Sky', '冬日之空'], ['Quiet Stars', '寂星'], ['Grace in Motion', '动中之恩']
